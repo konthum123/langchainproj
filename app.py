@@ -117,7 +117,7 @@ app = FastAPI(title="Indian weather And Cinema Agent")
 add_routes(app,
            formatted_agent_chain,
            path="/agent",
-           playground_type="Default")
+           playground_type="default")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
